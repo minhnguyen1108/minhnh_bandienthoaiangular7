@@ -1,0 +1,55 @@
+<script src="src/assets/js/js.js">
+</script>
+
+<div class="menu-bg" id="menuchange" style="background-color: #e3f2fd;">
+    <div class="boxcenter">
+        <nav id="navbar-example" class="navbar navbar-light navbar-expand-md">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <a class="navbar-brand mr-auto" [routerLink]="['/trangchu']"><img src="../assets/images/logo.png"></a>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" [routerLink]="['/trangchu']">Trang chủ <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['/cacloaidienthoai']">Các loại điện thoại</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Nhà sản xuất
+                    </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">SAMSUNG</a>
+                            <a class="dropdown-item" href="#">OPPO</a>
+                            <a class="dropdown-item" href="#">IPHONE</a>
+                            <a class="dropdown-item" href="#">IPHONE</a>
+                            <a class="dropdown-item" href="#">IPHONE</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-success" type="submit" [routerLink]="['/login']">Login</button>
+                    </li>
+                    <li class="nav-item">
+                        <div class="theme-switch-wrapper" data-toggle="tooltip" data-placement="bottom" title="Sáng/Tối">
+                            <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"></div>
+                  </label>
+                        </div>
+                    </li>
+                </ul>
+
+
+            </div>
+        </nav>
+
+    </div>
+</div>
+<!-- end top nav -->
+
+
+<div>
+    <router-outlet></router-outlet>
+</div>
